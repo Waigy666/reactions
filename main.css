@@ -12,7 +12,6 @@ body {
   vertical-align: middle;
 }
 
-
 h1 {
   color: rgb(15, 11, 6);
   text-align: center;
@@ -43,6 +42,7 @@ p {
 
 #app {
   display: flex;
+  float: center;
   width: 500px;
   height: 300px;
   font-family: "Open Sans", sans-serif;
@@ -51,6 +51,7 @@ p {
 
 .click-area {
   flex-grow: 1;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
@@ -69,6 +70,7 @@ p {
 
 .recent-scores {
   display: flex;
+  
   flex-direction: column;
   width: 125px;
   flex-shrink: 0;
@@ -76,6 +78,7 @@ p {
 
 .score {
   flex-grow: 1;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
