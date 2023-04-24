@@ -45,7 +45,34 @@ clickArea.addEventListener("click", () => {
     const score = Date.now() - msSinceEpochOnTimeout;
 
     waitingForClick = false;
-    displayText.textContent = `Your time was ${score} ms! Click to play again.`;
+    scoretext =  'Your time was ' + score + ' ms!\r\n';
+    displayText.setAttribute('style', 'white-space: pre;');
+    if (score < 298) {
+      displayText.textContent = scoretext + '\r\n'
+      displayText.textContent += 'Your reaction age is less than 18 years old!.\r\n';
+      displayText.textContent += 'Click to play again.';
+    }
+    else if (score > 311 && score < 387) {
+      displayText.textContent = scoretext  + '\r\nYour reaction age is: \r\n\ 20 to 30 years old!\r\n\r\nClick to play again.';
+    }
+    else if (score > 388 && score < 475) {
+      displayText.textContent = scoretext  + '\r\nYour reaction age is: \r\n\ 30 to 40 years old!\r\n\r\nClick to play again.';
+    } 
+    else if (score > 476 && score < 574) {
+      displayText.textContent = scoretext + '\r\nYour reaction age is: \r\n\ 40 to 50 years old!\r\n\r\nClick to play again.';
+    } 
+    else if (score > 575 && score < 684) {
+      displayText.textContent = scoretext + '\r\nYour reaction age is: \r\n\ 50 to 60 years old!\r\n\r\nClick to play again.';
+    } 
+    else if (score > 685 && score < 806) {
+      displayText.textContent = scoretext + '\r\nYour reaction age is: \r\n\ 60 to 70 years old!\r\n\r\nClick to play again.';
+    } 
+    else if (score > 807 && score < 940) {
+      displayText.textContent = scoretext + '\r\nYour reaction age is: \r\n\ 70 to 80 years old!\r\n\r\nClick to play again.';
+    } 
+    else if (score > 941) {
+      displayText.textContent = scoretext + '\r\nYour reaction age is: \r\n\ 80 to 90 years old!\r\n\r\nClick to play again.';
+  } 
 
     addScore(score);
   } else {
