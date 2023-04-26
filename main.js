@@ -36,6 +36,7 @@ function addScore(score) {
   }
 }
 
+
 function scorefeedback(score) {
 scoretext =  'Your time was ' + score + ' ms!\r\n';
 agerange = getagerange(score)
@@ -62,3 +63,6 @@ function getagerange(score) {
   case score > 941:
     return "Your reaction age is: \r\n\ 80 to 90 years old!"
   }
+}
+
+module.exports = { getagerange }
