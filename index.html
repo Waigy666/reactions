@@ -32,21 +32,3 @@
       </div>
     </div>  
   </section>
-  <script async src="main.js"></script>
-  <script> const clickArea = document.querySelector(".click-area");
-  const displayText = document.querySelector(".display-text");
-  const scoreElements = document.querySelectorAll(".score");
-    clickArea.addEventListener("click", () => {
-    if (waitingForClick) {
-      const score = Date.now() - msSinceEpochOnTimeout;
-
-      waitingForClick = false;
-      addScore(score);
-      scorefeedback(score);
-    } else {
-      play();
-    }
-  });
-  </script>
-</body>
-</html>
