@@ -1,7 +1,3 @@
-const clickArea = document.querySelector(".click-area");
-const displayText = document.querySelector(".display-text");
-const scoreElements = document.querySelectorAll(".score");
-
 const scoreHistory = [];
 
 const MINIMUM_MS_TILL_CHANGE = 3000;
@@ -40,18 +36,6 @@ function addScore(score) {
   }
 }
 
-clickArea.addEventListener("click", () => {
-  if (waitingForClick) {
-    const score = Date.now() - msSinceEpochOnTimeout;
-
-    waitingForClick = false;
-    addScore(score);
-    scorefeedback(score);
-  } else {
-    play();
-  }
-});
-
 
 function scorefeedback(score) {
 scoretext =  'Your time was ' + score + ' ms!\r\n';
@@ -80,3 +64,5 @@ function getagerange(score) {
     return "Your reaction age is: \r\n\ 80 to 90 years old!"
   }
 }
+
+module.exports = { getagerange }
