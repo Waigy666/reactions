@@ -1,5 +1,48 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  color: rgb(15, 11, 6);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: rgb(15, 11, 6);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: rgb(15, 11, 6);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+pic {
+  float: left;
+}
+
+p {
+  padding:0px 24px 0px 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #app {
   display: flex;
+  float: center;
   width: 500px;
   height: 300px;
   font-family: "Open Sans", sans-serif;
@@ -8,11 +51,12 @@
 
 .click-area {
   flex-grow: 1;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
 
-  background: #950000;
+  background: #0b1dbe;
   cursor: pointer;
 }
 
@@ -26,6 +70,7 @@
 
 .recent-scores {
   display: flex;
+  
   flex-direction: column;
   width: 125px;
   flex-shrink: 0;
@@ -33,6 +78,7 @@
 
 .score {
   flex-grow: 1;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
