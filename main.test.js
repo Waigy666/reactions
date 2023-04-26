@@ -1,5 +1,4 @@
 
-/** * @jest-environment jsdom */
 const {getagerange} = require('./main.js')
 
 test('that Jest is working', () => {
