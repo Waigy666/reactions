@@ -1,7 +1,3 @@
-const clickArea = document.querySelector(".click-area");
-const displayText = document.querySelector(".display-text");
-const scoreElements = document.querySelectorAll(".score");
-
 const scoreHistory = [];
 
 const MINIMUM_MS_TILL_CHANGE = 3000;
@@ -39,19 +35,6 @@ function addScore(score) {
     scoreElements[i].textContent = `${score} ms`;
   }
 }
-document.addEventListener('DOMContentLoaded', function () {
-  clickArea.addEventListener("click", () => {
-    if (waitingForClick) {
-      const score = Date.now() - msSinceEpochOnTimeout;
-
-      waitingForClick = false;
-      addScore(score);
-      scorefeedback(score);
-    } else {
-      play();
-    }
-  });
-});
 
 
 function scorefeedback(score) {
