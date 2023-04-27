@@ -18,5 +18,11 @@ describe('Testing the lower breakpoint', () => {
       expect(getagerange(299)).toBe('Your reaction age is: \r\n\ 20 to 30 years old!');
       expect(getagerange(300)).not.toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
    });
+
+   it('That function getagerange works as expected on max of first range', () => {
+      expect(getagerange(387)).toBe('Your reaction age is: \r\n\ 20 to 30 years old!');
+      expect(getagerange(388)).toBe('Your reaction age is: \r\n\ 30 to 40 years old!');
+      expect(getagerange(388)).not.toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
+   });
    
 })
