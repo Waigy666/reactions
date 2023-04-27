@@ -56,8 +56,35 @@ This project allows us to take some level of risk. It is a small, simple require
 
 We have a rough idea what the solution should look like but not what will really make the finished product stand out. Speed of delivery is very important with small iterative development items being delivered frequently. A key point here is that we have no time constraints on each iteration. For a larger project the issue tickets might be acknowledged in a scrum session where the project team meet on a regular basis, usually daily to prioritise the tickets to be addressed that day. Scrum allows us to focus on creating a working application as quickly as possible. Once the working application is deployed it will be continuously available until the next release which will be a fully working product. This means the planning, analysis, design, development, and testing into each iteration. In this very I will decide what requirements will be addressed, how they are implemented and test them before release.
 
-##### branch – index-html
+##### Branch – index-html
 At this stage we start to match the code with the design. Our clickable prototype provides a good basis for the containers and layout of the page and any initial styling of those pages
 The first piece of coding is in HTML. This code defines the page content and what content goes where. The elements of the page are given a class that allows us to write CSS styling code for that element of the page. We are using CSS to size the elements on the page, add colour to the click area and add the welcome message text. At this stage the screen does nothing when clicked.
 
 ![Fig 8](fig8_first_code_output.png)
+
+#### Branch – initial-interactivity
+
+The next piece of code is the Javascript (JS) code which adds interactive functionality to the page elements. Here we are adding the click and response behaviour to the play area. For the HTML elements to pick up the JS instructions the HTML code has one small update to use the JS code.
+The page elements are now interactive, the play area can be clicked, the writing disappears, and the screen turns green expecting a click. When clicked it presents the reaction speed time.
+
+![Fig 9](fig9_play_screen.png)
+
+The gameplay area is now very close to the prototype version in terms of clicks but the time for the screen to change is now completely randomised (as opposed to the default delay time of the prototype)
+
+#### Branch – headers
+
+To align with the prototype, I added some headers with the next update. This was a simple update to the HTML code. No styling has been applied yet.
+
+![Fig 10](fig10_headers.png)
+
+#### Branch – accessibility-colour - First unforseen requirement!
+
+This was the first issue raised that deterred from the original prototype. Given the accessibility issues red/green presents I wanted to update the colours used from red/green to a more accessible blue/orange for colour deficient users. Here we updated the CSS file and the JS file because the JS file contains the colour the click area changes to, and the CSS has the starting colour.
+
+#### Branch – format-headers
+This step provides font and positioning of the header text
+
+#### Branch – image-gameplay-sections
+To align with the prototype, I needed to create a new section on the page to place the image object. I also decided to move the image associated text above the image itself. This required a change to the HTML code to create the sections and add the object elements. It gets us to here, some alignment is needed!
+
+![Fig 11](fig10_imgandgame.png)
