@@ -46,7 +46,7 @@ describe('Testing the lower breakpoint', () => {
       it('That function getagerange works as expected on very high values', () => {
          expect(getagerange(10000)).toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
          expect(getagerange(20000)).toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
-         expect(getagerange(30000)).not.toBe('Your reaction age is: \r\n\ 70 to 80 years old!');
+         expect(getagerange(40000)).not.toBe('Your reaction age is: \r\n\ 70 to 80 years old!');
       });
 
    });
