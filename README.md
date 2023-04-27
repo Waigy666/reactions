@@ -143,9 +143,3 @@ We expected specific test feedback and received the correct messages. Further te
 Here we find the code has a gap
 
 ![Fig 19](fig19_firstjest.png)
-
-
-
-
-
-
