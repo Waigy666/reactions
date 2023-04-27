@@ -140,6 +140,20 @@ The first test passed:
 
 We expected specific test feedback and received the correct messages. Further testing of the breakpoint identified a problem with the code:
 
+![Fig 19](fig19_firstjest.png)
+
 Here we find the code has a gap
 
-![Fig 19](fig19_firstjest.png)
+![Fig 20](fig20_firstjestresults.png)
+
+There is nothing being returned for value 299. We have a gap in the code!
+
+![Fig 21](fig21_firstjestresults.png)
+
+Following the TDD approach, a ticket is raised acknowledging the error, a fix can be proposed and submitted as a pull request.
+
+![Fig 22](fig22_agerangetestpass.png)
+
+The code has been improved through test-driven development! Initially I had to refactor the code to be able to test the specific function, then testing uncovered a problem with the code that has been fixed. An issue was created, a solution proposed with improved code, the test was carried out again and test passes recorded. Additional testing was progressed using the same process in GitHub and the full test file can be viewed there. A new CI workflow was setup in GitHub to run the test with each new commit to the main branch. This ensures all tests can be recorded and checked while application dependant files are changing. Test coverage, that is what percentage of my code is being tested via unit tests.
+
+![Fig 23](fig23_coverage.png)
