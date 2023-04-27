@@ -13,9 +13,3 @@ Two user personas have been attributed to this idea:
 ![Fig 1](fig1_user_persona_mo.png)
 ![Fig 2](fig2_user_persona_dr.png)
 
-
-
-
-
-![Fig 1](fig1_user_persona_mo.png)
-
