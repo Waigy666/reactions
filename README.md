@@ -13,10 +13,53 @@ Two user personas have been attributed to this idea:
 ![Fig 1](fig1_user_persona_mo.png)
 ![Fig 2](fig2_user_persona_dr.png)
 
+#### Design:
+The specification is to build a reaction speed test. This will be based on the time between a stimulus (change of colour) and a reaction (click of the mouse). Other than these functional requirements we have some free reign. Using Design Thinking as a toolkit we don’t have too much to consider in terms of the empathy stage. We have a simple desktop application to build with limited functionality. The user experience does not need to accommodate a variety of different user needs. The interface should be simple and clear. The problem can be defined as a need to create a click-based reaction speed test. 
+
+#### Ideate:
+Using Figma I began prototyping framed around a ‘How might we?’ thought strategy. How might we be informed of the game intentions. How might we interact with the game. How might the results be presented. How might we relay the right information at the right time.
+
+A very simple lo-fi wireframe model was created. Here we do not need to add anything other than the base containers of objects on the page. The basic requirements are for a ‘play area’ with boxes showing the scores. While creating the very first screen I decided to add 5 score boxes that will show the last 5 games on a rolling basis should the user play more than 5 times. Alongside this I added the play or click area. The page was given a title. With the first screen defined and incorporating the page objects required to fulfil the basic requirements. 
+
+![Fig 3](fig3_first_lo-fi_screen.png)
+
+Following on from the first screen we can start to think about how we want the page to react after interaction. In this case starting the game. When the play area is clicked it will stay red for a certain amount of time and then turn green and await a click:
+
+![Fig 4](fig4_first_lo-fi_play.png)
+
+When the user clicks (submits their reaction time) the results will display.
+
+![Fig 5](fig5_first_lo-fi_results.png)
+
+The full flow can be observed as:
+
+![Fig 6](fig6_lo-fi_flow.png)
+[Figma Lo-Fi](https://www.figma.com/file/JQZRIIBkOs0na5nVzV8jqd/Reaction-Game?node-id=719%3A2&t=J29nCaGuNWKQzdxK-1)
+
+The connectors without a circle in the middle represent a click action and the connectors with circles in the middle represent a time-delay action (waiting for the colour to change).
+Prototype:
+Going through the click actions on the lo-fi version prompted some ideas for the first draft of a hi-fi version. Here I can start to think about the layout of the screen, the colours used and any additional information or interactivity that might be good for the first draft prototype. I added a clear title and an info graphic showing what is happening as a human user while conducting the reaction test.
+
+![Fig 7](fig7_hi-fi_flow.png)
+[Figma Hi-Fi](https://www.figma.com/file/JQZRIIBkOs0na5nVzV8jqd/Reaction-Game?node-id=713%3A40&t=J29nCaGuNWKQzdxK-1)
+
+The prototype gives us a tangible product to help guide on additional requirements or enhancements through use of the product. New ideas will be logged as an issue/ticket. These will be evaluated for implementation and prioritisation. Ideas should be considered, in this case, for time to implement and benefit to the product.
+
+Project Life-Cycle:
+We will take an Agile approach to the project life-cycle. As defined by the SDLC we will be using an iterative project management approach. We don’t have lots of fixed requirements. A Test-Driven Development approach will be used to create the base code for the minimal viable product (working reaction test). Enhancements and priorities will be driven via an iterative approach with issue submissions and prioritisation after each deployment and push to the projects main branch (master code). The process here will be to develop code, test the code, and refactor the code. As well as being able to respond to changes in requirements, some flexibility is available to fix any unforeseen bugs and new development priorities. The project will be managed within GitHub projects. This provides a Kanban style board to identify tasks and the current task status. Kanban offers immediate insight into the status of work at any given time. We have a clear visual representation of the project tasks and status. The project has one developer and so Kanban is ideal as it focuses on achieving flow for the development team by limiting the work addressed at any one time.  The Kanban approach allows for re-prioritisation of a task. Iterations will not be of a fixed length. Some tasks will take longer than others to deliver, all tasks are expected to take hours and minutes rather than days.
+
+This project allows us to take some level of risk. It is a small, simple requirement list that requires little code. 
+•	All activity will be recorded as a GitHub issue
+•	Solutions will be proposed via GitHub pull requests 
+•	Updates will be made by merging the pull requests. 
+•	All ideas and change proposals will be tracked by issue tickets as Kanban board items through the project stages of: To Do, In Progress, In Review and Done. 
+
+We have a rough idea what the solution should look like but not what will really make the finished product stand out. Speed of delivery is very important with small iterative development items being delivered frequently. A key point here is that we have no time constraints on each iteration. For a larger project the issue tickets might be acknowledged in a scrum session where the project team meet on a regular basis, usually daily to prioritise the tickets to be addressed that day. Scrum allows us to focus on creating a working application as quickly as possible. Once the working application is deployed it will be continuously available until the next release which will be a fully working product. This means the planning, analysis, design, development, and testing into each iteration. In this very I will decide what requirements will be addressed, how they are implemented and test them before release.
+
+##### branch – index-html
+At this stage we start to match the code with the design. Our clickable prototype provides a good basis for the containers and layout of the page and any initial styling of those pages
+The first piece of coding is in HTML. This code defines the page content and what content goes where. The elements of the page are given a class that allows us to write CSS styling code for that element of the page. We are using CSS to size the elements on the page, add colour to the click area and add the welcome message text. At this stage the screen does nothing when clicked.
+
+![Fig 8](fig8_first_code_output.png)
 
 
-
-
-...
-css
-...
