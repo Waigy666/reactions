@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/missKatiaPunter/trying-craig-bug.git"
+    "url": "git+https://github.com/Waigy666/reactions"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/missKatiaPunter/trying-craig-bug/issues"
+    "url": "https://github.com/Waigy666/reactions"
   },
-  "homepage": "https://github.com/missKatiaPunter/trying-craig-bug#readme",
+  "homepage": "https://github.com/Waigy666/reactions#readme",
   "dependencies": {
     "jest": "^29.5.0"
   }
