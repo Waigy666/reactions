@@ -46,21 +46,21 @@ displayText.textContent = scoretext + "\r\n" + agerange + "\r\n\r\nClick to play
 
 function getagerange(score) {
   switch (true) {
-  case  score < 298:
+  case  score <= 298:
     return "Your reaction age is less than 18 years old!";
-  case score > 311 && score < 387:
+  case score >= 299 && score < 387:
     return "Your reaction age is: \r\n\ 20 to 30 years old!";
-  case score > 388 && score < 475:
+  case score >= 388 && score < 475:
     return "Your reaction age is: \r\n\ 30 to 40 years old!";
-  case score > 476 && score < 574:
+  case score >= 476 && score < 574:
     return "Your reaction age is: \r\n\ 40 to 50 years old!";
-  case score > 575 && score < 684:
+  case score >= 575 && score < 684:
     return "Your reaction age is: \r\n\ 50 to 60 years old!";
   case score > 685 && score < 806:
     return "Your reaction age is: \r\n\ 60 to 70 years old!";
-  case score > 807 && score < 940:
+  case score >= 807 && score < 940:
     return "Your reaction age is: \r\n\ 70 to 80 years old!"
-  case score > 941:
+  case score >= 941:
     return "Your reaction age is: \r\n\ 80 to 90 years old!"
   }
 }
