@@ -61,5 +61,3 @@ At this stage we start to match the code with the design. Our clickable prototyp
 The first piece of coding is in HTML. This code defines the page content and what content goes where. The elements of the page are given a class that allows us to write CSS styling code for that element of the page. We are using CSS to size the elements on the page, add colour to the click area and add the welcome message text. At this stage the screen does nothing when clicked.
 
 ![Fig 8](fig8_first_code_output.png)
-
-
