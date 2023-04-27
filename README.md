@@ -88,6 +88,3 @@ This step provides font and positioning of the header text
 To align with the prototype, I needed to create a new section on the page to place the image object. I also decided to move the image associated text above the image itself. This required a change to the HTML code to create the sections and add the object elements. It gets us to here, some alignment is needed!
 
 ![Fig 11](fig10_imgandgame.png)
-
-
-
