@@ -87,7 +87,65 @@ This step provides font and positioning of the header text
 #### Branch – image-gameplay-sections
 To align with the prototype, I needed to create a new section on the page to place the image object. I also decided to move the image associated text above the image itself. This required a change to the HTML code to create the sections and add the object elements. It gets us to here, some alignment is needed!
 
-![Fig 11](fig10_imgandgame.png)
+![Fig 11](fig11_imgandgame.png)
+
+#### Branch – page-layout
+Here we add some alignment instructions for the new sections and the body of the page which consists of the image and the play area with an update to the CSS file
+
+#### Branch – image-text-bug, rounding-edges
+A bug was created here for the display of the image text. It was fixed with additional CSS for paragraph text with some additional padding. The edges of the gameplay area and the score boxes were rounded for aesthetics.
+
+![Fig 12](fig12_workinggame.png)
+
+The flexible nature of the approach has enabled me to incorporate enhancements such as the accessibility changes and relevance of the presented information while creating the MVP. It differs very slightly from the original prototype with the incorporated improvements.
+
+This takes us into the iterative development phase of the project. We have a working MVP. Users can now suggest enhancements and raise bugs through continued testing of the app. During the project we have linked the to do item tickets to code updates to create the MVP. We will use the same process for enhancement tickets, proposed code updates and other changes to improve the tool.
+
+### Unit Testing:
+During development of the MVP white box testing was conducted while building the whole app. Additional coding was executed and new project issues were created to address the test findings. The next step demonstrates the use of the JEST framework. With the addition of the enhancement detailed below (age-range feedback) I introduced new code that was not optimised. The need to test the code in smaller parts identified where refactoring of the code will improve maintenance and testability in the future. The code that delivers the age range recommendation for the user’s achieved score has a function that defines the age ranges returned. 
+
+To demonstrate a test-driven development approach, I used Jest to unit test this piece of code. The unit testing led to code improvements and a better solution. There are several tickets raised that were necessary to align my remote data in GitHub with my local machine to avoid conflicts.
+
+#### Branch – first-test-no-conflicts
+
+This branch addresses those issues and delivers the updated DOM location.
+
+An early enhancement identified while using the app is to get some meaningful feedback on how you performed. With the addition of some boundaries for expected performance by age ranges we can suggest what age range would be associated to the performance for play.
+This was added initially by a large if/else statement within the existing EventListener function.
+
+![Fig 13](fig13_ifelse.png)
+
+The update produced the following results, note the new message in the middle:
+
+![Fig 14](fig14_agerangefeedback.png)
+
+An output of a Test-Driven-Development approach is efficient code. The large if/else statement was refactored in two new pull requests for code refactoring. The first refactoring step moved the code to a new function’ scorefeedback’. This takes the score parameter produced by the eventlistener and identifies the age range it belongs to. Further refactoring improvements take the age range selection away from the constant message elements of the ‘scorefeedback’ function. These elements include the score and the surrounding text. The age group changes depending on the score achieved, therefore it is better to split this out to a separate function so if the ranges need to be made more granular or the messages differ per age range then it only needs to be changed within one function in the future
+The neater code results in:
+
+A function that delivers the consistent score message
+
+![Fig 15](fig15_arfunction.png)
+
+and a cleaner CASE statement replaces the large if/else in a new function called ‘getagerange’.
+
+![Fig 16](fig16_arcase.png)
+
+To start with I tested the break points of the age ranges. A smoketest was created to ensure Jest was working as expected
+
+![Fig 17](fig17_smoketest.png)
+
+The first test passed:
+
+![Fig 18](fig18_smoketestresults.png)
+
+We expected specific test feedback and received the correct messages. Further testing of the breakpoint identified a problem with the code:
+
+Here we find the code has a gap
+
+![Fig 19](fig19_firstjest.png)
+
+
+
 
 
 
