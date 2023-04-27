@@ -1,23 +1,14 @@
 {
   "name": "reactions",
   "version": "1.0.0",
-  "description": "",
+  "description": "...\r css\r ...",
   "main": "main.js",
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Waigy666/reactions"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Waigy666/reactions"
-  },
-  "homepage": "https://github.com/Waigy666/reactions#readme",
   "dependencies": {
     "jest": "^29.5.0"
   }
 }
-
