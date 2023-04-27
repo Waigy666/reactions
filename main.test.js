@@ -24,5 +24,20 @@ describe('Testing the lower breakpoint', () => {
       expect(getagerange(388)).toBe('Your reaction age is: \r\n\ 30 to 40 years old!');
       expect(getagerange(388)).not.toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
    });
+})
+
+   describe('Testing the higher breakpoint', () => {
+   it('That function getagerange works as expected on max of first range', () => {
+      expect(getagerange(940)).toBe('Your reaction age is: \r\n\ 70 to 80 years old!');
+      expect(getagerange(941)).toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
+      expect(getagerange(942)).toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
+      expect(getagerange(942)).not.toBe('Your reaction age is: \r\n\ 20 to 30 years old!');
+   });
+
+   it('That function getagerange works as expected on score >941', () => {
+      expect(getagerange(941)).toBe('Your reaction age is: \r\n\ 80 to 90 years old!');
+      expect(getagerange(941)).not.toBe('Your reaction age is: \r\n\ 20 to 30 years old!');
+
+   });
    
 })
