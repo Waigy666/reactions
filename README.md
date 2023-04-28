@@ -11,6 +11,7 @@ For this project I will use an iterative System Development Life-Cycle (SDLC) to
 Two user personas have been attributed to this idea:
 
 ![Fig 1](pictures/fig1_user_persona_mo.png)
+
 ![Fig 2](pictures/fig2_user_persona_dr.png)
 
 #### Design:
@@ -168,8 +169,5 @@ The code has been improved through test-driven development! Initially I had to r
 The results show that I have covered nearly 40% of my code with unit tests.
 
 Evaluate!
-
-
-
 
 
