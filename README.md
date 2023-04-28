@@ -50,11 +50,12 @@ The prototype gives us a tangible application that helps initiate new ideas that
 Project Life-Cycle:
 We will take an Agile approach to the project life-cycle. As defined by the SDLC we will be using an iterative project management approach. We don’t have many fixed requirements. A Test-Driven Development approach will be used to create the code for a working reaction test. Enhancements and priorities will be driven via an iterative approach with issue submissions and review and prioritisation after each new branch deployment. The process here will be to develop code, test the code, and refactor the code. As well as being able to respond to changes in requirements, some flexibility is available to fix any unforeseen bugs and new development priorities. The project will be managed within GitHub projects. This provides a Kanban style board to identify tasks and the current task status. Kanban offers immediate insight into the status of work at any given time. We have a clear visual representation of the project tasks and status. The project has one developer so Kanban is a good tool to achieve flow within the development team by limiting the work addressed at any one time.  The Kanban approach allows for re-prioritisation of a task. Iterations will not be of a fixed length. Some tasks will take longer than others to deliver, all tasks are expected to take hours and minutes rather than days.
 
-This project allows us to take some level of risk. It is a small, simple requirement list that requires little code. 
-•	All activity will be recorded as a GitHub issue
-•	Issues will be addressed and solutions will be proposed via GitHub pull requests on a new code branch
-•	Updates will be made by merging the pull request branch to main. 
-•	All ideas and change proposals will be tracked by issue tickets as Kanban board items through the project stages of: To Do, In Progress, In Review and Done. 
+This project allows us to take some level of risk. It is a small, simple requirement list that requires little code.
+
+*	All activity will be recorded as a GitHub issue
+*	Issues will be addressed and solutions will be proposed via GitHub pull requests on a new code branch
+*	Updates will be made by merging the pull request branch to main. 
+*	All ideas and change proposals will be tracked by issue tickets as Kanban board items through the project stages of: To Do, In Progress, In Review and Done. 
 
 At the MVP (Minimum Viable Product) stage We have a rough idea what the solution should look like but not what will really make the finished product stand out. Speed of delivery is very important with small iterative development items being delivered frequently. A key point here is that we have no time constraints on each iteration. For a larger project the issue tickets might be acknowledged in a scrum session where the project team meet on a regular basis, usually daily to prioritise the work addressed that day. Scrum allows us to focus on creating a working application as quickly as possible. Once the working application is deployed it will be continuously available until the next release which will be a fully working product. This requires planning, analysis, design, development, and testing in each iteration. In this small project I will decide what requirements will be fulfilled, how they are implemented and test them before release.
 
