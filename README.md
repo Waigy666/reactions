@@ -15,10 +15,10 @@ Two user personas have been associated to this idea:
 
 ![Fig 2](pictures/fig2_user_persona_dr.png)
 
-#### Design:
+### Design:
 The specification is to build a reaction speed test. This will be based on the time between a stimulus (change of colour) and a reaction (click of the mouse). Other than these functional requirements we have some free reign. Using Design Thinking as a toolkit we don’t have too much to consider in terms of the empathy stage. We have a simple desktop application to build with limited functionality. The user experience does not need to accommodate a variety of different user needs, all users will use the app in the same way and it will be fun to play for any user. The interface should be simple and clear. The problem can be defined as a need to create a click-based reaction speed test. 
 
-#### Ideate:
+### Ideate:
 Using Figma I began prototyping framed around a ‘How might we?’ thought strategy. How might we be informed of the game intentions. How might we interact with the game. How might the results be presented. How might we relay the right information at the right time.
 
 A very simple lo-fi wireframe model was created. Here we do not need to add anything other than the base containers of objects on the page. The basic requirement is for a ‘play area’ with output boxes displaying the scores. Prototyping raised some new requirements. I decided to add 5 score boxes that will show the last 5 games (on a rolling basis should the user play more than 5 times). Aside this I added the play or click area. The page was given a title. The first screen is defined and incorporates the page objects required to fulfil the interactive and output requirements. 
@@ -65,7 +65,7 @@ Enhancement tickets raised following the delivery of the MVP can be considered f
 
 ![Fig 24](pictures/fig24_kanban.png)
 
-##### Branch – index-html
+#### Branch – index-html
 At this stage I started matching the code with the design. The clickable prototype provided a base understanding for the containers and layout required on the page and any initial styling of those objects. The first piece of coding is in HTML. This code defines the page content and where it goes. The elements of the page are given a class that allows us to write CSS styling code for that element of the page. We are using CSS to size the elements on the page, add colour to the click area and add the welcome message text. At this stage the screen does nothing when clicked.
 
 ![Fig 8](pictures/fig8_first_code_output.png)
