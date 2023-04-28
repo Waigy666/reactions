@@ -33,7 +33,7 @@ When the user clicks (submits their reaction time) the results will display in m
 
 ![Fig 5](pictures/fig5_first_lo-fi_results.png)
 
-The full click-delay-flow reviewed here:
+The full click-delay-flow can be reviewed here:
 [Open the Figma Lo-Fi prototype here](https://www.figma.com/file/JQZRIIBkOs0na5nVzV8jqd/Reaction-Game?node-id=719%3A2&t=J29nCaGuNWKQzdxK-1)
 
 The connectors without a circle in the middle represent a click action and the connectors with circles in the middle represent a time-delay action (waiting for the colour to change).
