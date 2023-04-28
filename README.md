@@ -155,7 +155,7 @@ Here we find the code has a gap
 
 There is nothing being returned for value 299!
 
-![Fig 21](pictures/fig21_firstjestresults.png)
+![Fig 21](pictures/fig21_agerangegaps.png)
 
 Following the TDD approach, tests are conducted, in the result of a failing test a ticket is raised, a fix can be proposed. The fix is approved and retested, then the fixed code can be merged with the master code. The code has been refactored.
 
